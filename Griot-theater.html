@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Griot Theater</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            #navbar {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            body {
+                background-color: black;
+            }
+
+            #title-head {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                color: white;
+            }
+
+            .white-text {
+                color: white;
+                font-size: 10px;
+                font-family: Roboto;
+                font-weight: bold;
+            }
+
+            .item {
+                background-color: black;
+            }
+
+            #main-image {
+                width: 100%;
+            }
+
+            .centered-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 120px;
+                width: 100%;
+                color: white;
+                text-align: center;
+                margin-top: 85px;
+            }
+
+            #center-page-layout {
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: stretch;
+                padding-bottom: 20px;
+            }
+
+            .vertical-divs {
+                display: inline-block;
+                background-color: white;
+                width: 20%;
+                margin: 0px;
+                
+            }
+
+            #left-vertical-div {
+                background-color: white;
+                width: 20%;
+            }
+
+
+            #right-vertical-div {
+                float: right;
+            }
+
+            #middle-vertical-div {
+                background-color: white;
+                width: 60%;
+                
+                
+            }
+
+            #white-box {
+                background-color: rgb(255, 255, 255);
+                height: 60px;
+            }
+
+        
+            #date-paragraph {
+                background-color: rgb(245, 245, 245);
+                border: 1.75px solid rgb(211, 211, 211);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 14px;
+                padding: 4px 30px 4px;
+            }
+
+            .horizontal-box {
+                display: grid;
+                grid-template-columns: 2fr 3fr 1fr;
+                border-bottom: 1.5px solid rgb(199, 199, 199);
+                
+            }
+
+            #picture-box {
+                background-color:white;
+                text-align: center;
+                
+
+            }
+
+            .theater-picture {
+                width: 90%;
+                object-fit: fill;
+                text-align: center;
+                margin: 7% 2%;
+            }
+
+            #middle-box {
+                margin-left: 5%;
+            }
+
+            #button-box {
+                padding: 50% 0%;
+            }
+
+            .read-more {
+                background-color: rgb(237, 202, 63);
+                border: 1px solid rgb(145, 138, 116);
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+                padding: 6px;
+                width: 100%;
+                font-size: large;
+            }
+
+            .line-one, .line-two, .last-two {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 5% 0%;
+            }
+
+            .line-one {
+                font-weight: 700px;
+                
+            }
+
+            .line-two {
+                font-size: small;
+                font-weight:500;
+            }
+
+            .last-two {
+                font-size: smaller;
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: stretch;
+                padding-bottom: 50px;
+                
+            }
+
+            .obj1 {
+                flex: 2;
+            }
+
+            .black-box {
+                display: block;
+                height: 25%;
+                background-color: black;
+            }
+
+
+            #map {
+                width: 75%;
+                float: right;
+                margin: 3% 0% 20% 0%;
+            }
+
+            .obj2 {
+                flex: 1;
+                padding-left: 50px;
+            }
+
+            .headings, .details {
+                color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+
+            .headings {
+                font-size: 45px;
+                margin-top: 0px;
+            }
+
+            .details {
+                font-size:smaller;
+                margin-bottom: 18%;
+            }
+
+            #second-last-line {
+               margin-bottom: 10%;
+            }
+
+            #text-with-icon {
+                display: inline-block;
+                margin-top: 0%;
+            }
+
+            #map-icon, #phone-icon {
+                display: inline-block;
+                width: 20px;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+
+            #email-icon {
+                display: inline-block;
+                width: 25px;
+                vertical-align: middle;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <div class="item" id="title-box">
+                <p id="title-head">Griot Theater</h2>
+            </div>
+            <div class="item">
+                <p></p>
+            </div>
+            <div class="item">
+                <p class="white-text">Home</p>
+            </div>
+            <div class="item">
+                <p class="white-text">Features</p>
+            </div>
+            <div class="item">
+                <p class="white-text">Our Actors</p>
+            </div>
+            <div class="item">
+                <p class="white-text">Mission</p>
+            </div>
+            <div class="item">
+                <p class="white-text">Contact</p>
+            </div>
+            <div class="item">
+                <p></p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img alt="theater-stage" id="main-image" src="theater-image-background.png">
+            <div class="centered-text">Featured Shows</div>
+        </div>
+        <div id="center-page-layout">
+            <div class="vertical-divs" id="left-vertical-div"></div>
+            <div class="vertical-divs" id="middle-vertical-div">
+                <div id="white-box"></div>
+                <div id="date-div">
+                    <p id="date-paragraph">April 2020</p></div>
+                <div class="horizontal-box">
+                    <div class="line-box" id="picture-box">
+                        <img alt="theater-picture" class="theater-picture" src="a-raisin.jpg">
+                    </div>
+                    <div class="line-box" id="middle-box">
+                        <p class="line-one">A Raisin In The Sun</p>
+                        <p class="line-two">April 6, 2020 - March 12 2021</p>
+                        <p class="last-two">Griot Theater, 233 State St Chicago,IL</p>
+                        <p class="last-two">$75</p>
+                    </div>
+                    <div class="line-box" id="button-box">
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="horizontal-box">
+                    <div class="line-box" id="picture-box">
+                        <img alt="theater-picture" class="theater-picture" src="a-raisin.jpg">
+                    </div>
+                    <div class="line-box" id="middle-box">
+                        <p class="line-one">A Raisin In The Sun</p>
+                        <p class="line-two">April 6, 2020 - March 12 2021</p>
+                        <p class="last-two">Griot Theater, 233 State St Chicago,IL</p>
+                        <p class="last-two">$75</p>
+                    </div>
+                    <div class="line-box" id="button-box">
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="horizontal-box">
+                    <div class="line-box" id="picture-box">
+                        <img alt="theater-picture" class="theater-picture" src="a-raisin.jpg">
+                    </div>
+                    <div class="line-box" id="middle-box">
+                        <p class="line-one">A Raisin In The Sun</p>
+                        <p class="line-two">April 6, 2020 - March 12 2021</p>
+                        <p class="last-two">Griot Theater, 233 State St Chicago,IL</p>
+                        <p class="last-two">$75</p>
+                    </div>
+                    <div class="line-box" id="button-box">
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="horizontal-box">
+                    <div class="line-box" id="picture-box">
+                        <img alt="theater-picture" class="theater-picture" src="a-raisin.jpg">
+                    </div>
+                    <div class="line-box" id="middle-box">
+                        <p class="line-one">A Raisin In The Sun</p>
+                        <p class="line-two">April 6, 2020 - March 12 2021</p>
+                        <p class="last-two">Griot Theater, 233 State St Chicago,IL</p>
+                        <p class="last-two">$75</p>
+                    </div>
+                    <div class="line-box" id="button-box">
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-divs" id="right-vertical-div"></div>
+        </div>
+        <div class="bottom" style="background-color: black;">
+            <div class="obj1">
+                <div class="black-box"></div>
+                <img alt="map" id="map" src="map.png">
+            </div>
+            <div class="obj2">
+                <div class="black-box"></div>
+                <p class="headings">Info</p>
+                <img id="map-icon" src="map-pointer-icon.png">
+                <p class="details" id="text-with-icon">Chicago,IL 60611 United States</p><br>
+                <img id="email-icon" src="email-icon.png">
+                <p class="details" id="text-with-icon">example@example.com</p><br>
+                <img id="phone-icon" src="phone-icon.png">
+                <p class="details" id="text-with-icon" style="margin-left: 12px; margin-bottom: 100px;"> Call Us: 708-555-4488</p>
+            </div>
+            <div class="obj2">
+                <div class="black-box"></div>
+                <p class="headings">Shows</p>
+                <p class="details">The Piano Lesson</p>
+                <p class="details">A Raisin In The Sun</p>
+                <p class="details" id="second-last-line">FAME</p>
+                <p class="details" id="last-line">The Color Purple</p>
+            </div>
+            <div class="obj2">
+                <div class="black-box"></div>
+                <p class="headings">Social</p>
+                <p class="details">Facebook</p>
+                <p class="details">Twitter</p>
+                <p class="details" id="second-last-line">Youtube</p>
+                <p class="details" id="last-line">Instagram</p>
+            </div>
+        </div>
+    </body>
+</html>
